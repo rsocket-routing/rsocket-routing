@@ -494,7 +494,7 @@ table, and replace it with the information from the new ROUTE_SETUP.
 _Emitting ROUTE_ADD Frames_
 
 A broker SHOULD announce the new route to other interested brokers. The Broker does this by
-creating a ROUTER_ADD frame with the information from the ROUTE_SETUP frame that it
+creating a ROUTE_ADD frame with the information from the ROUTE_SETUP frame that it
 received. ROUTE_ADD frames MAY be sent to other Brokers to reconcile route information
 when requested by another Broker. ROUTE_ADD frames will contain a GMT timestamp. Frames
 will be ignored if the information in the routing table has a newer timestamp than the
